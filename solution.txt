@@ -1,1 +1,5 @@
-By default, the git restore command will discard any local, uncommitted changes in the corresponding files and thereby restore their last committed state. With the --staged option, however, the file will only be removed from the Staging Area - but its actual modifications will remain untouched.
+git restore <filename> is used to discard changes in the working directory and restore the file to its state in the last commit. This means that any changes you made to the file since the last commit will be lost, and the file will be reverted to the state it was in at the time of the last commit.
+
+git restore --staged <filename> is used to unstage changes that have been added to the staging area. This means that any changes you made to the file since the last commit will still be there in the working directory, but they will no longer be staged for the next commit.
+
+To summarize, git restore <filename> discards changes in the working directory while git restore --staged <filename> un-stages changes that have been added to the staging area.
