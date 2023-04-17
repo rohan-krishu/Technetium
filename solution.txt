@@ -3,3 +3,5 @@ git restore <filename> is used to discard changes in the working directory and r
 git restore --staged <filename> is used to unstage changes that have been added to the staging area. This means that any changes you made to the file since the last commit will still be there in the working directory, but they will no longer be staged for the next commit.
 
 To summarize, git restore <filename> discards changes in the working directory while git restore --staged <filename> un-stages changes that have been added to the staging area.
+
+hello everyone 
